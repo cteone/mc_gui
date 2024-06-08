@@ -226,4 +226,5 @@ final_all.update(grays_final_hex)
 
 colors = create_map.create_map(original_all,final_all)
 folder_path = Path('../static') / '1.20.1' / 'gui'
+# folder_path = Path('../static') / 'custom' / 'assets'
 retexture.retexture(folder_path,colors)

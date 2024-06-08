@@ -22,7 +22,7 @@ def retexture(path,colors):
       if entry.suffix == '.png':
         (ellipses,static, *rest) = entry.parts
         output = Path('../output',*rest)
-        process_image.change_colors(entry,output,colors)
+        process_image.change_colors_tolerance(entry,output,colors,3)
         print("file:", output)
     elif entry.is_dir():
       retexture(entry,colors)
