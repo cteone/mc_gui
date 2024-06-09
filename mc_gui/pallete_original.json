@@ -1,0 +1,36 @@
+{
+  "mono": {
+    "black":{
+      "lower": "#000000",
+      "upper": "#000000"
+    },
+    "nearBlack":{
+      "lower": "#000000",
+      "upper": "#000000"
+    },
+    "veryDarkGray":{
+      "lower": "#242424",
+      "upper": "#343434"
+    },
+    "darkGray":{
+      "lower": "#4f4f4f",
+      "upper": "#606060"
+    },
+    "gray":{
+      "lower": "#616161",
+      "upper": "#818181"
+    },
+    "lightGray":{
+      "lower": "#a4a4a4",
+      "upper": "#acacac"
+    },
+    "nearWhite":{
+      "lower": "#c6c6c6",
+      "upper": "#d0d0d0"
+    },
+    "white":{
+      "lower": "#ffffff",
+      "upper": "#ffffff"
+    }
+  }
+}
