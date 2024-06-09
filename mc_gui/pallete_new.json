@@ -1,0 +1,12 @@
+{
+  "mono": {
+    "black":"#2b190b",
+    "nearBlack":"#2b190b",
+    "veryDarkGray":"#513721",
+    "darkGray":"#664730",
+    "gray":"#664730",
+    "lightGray":"#836046",
+    "nearWhite":"#a1826b",
+    "white":"#a1826b"
+  }
+}

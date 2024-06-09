@@ -1,0 +1,16 @@
+{
+  "directories":[
+    "backgrounds",
+    "hanging_signs",
+    "presets",
+    "title",
+    "realms"
+  ],
+	"files":[
+    "bars.png",
+    "book.png",
+    "icons.png",
+    "light_dirt_background.png",
+    "options_background.png"
+  ]
+}

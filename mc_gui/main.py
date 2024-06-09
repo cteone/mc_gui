@@ -224,7 +224,10 @@ original_all.update(grays_original_hex)
 final_all = final_colors_hex
 final_all.update(grays_final_hex)
 
-colors = create_map.create_map(original_all,final_all)
+colors = create_map.create_map(original_colors_hex,final_colors_hex)
+colors += create_map.create_map_from_json("pallete_original.json","pallete_new.json")
+print(colors)
+# colors = create_map.create_map(original_all,final_all)
 folder_path = Path('../static') / '1.20.1' / 'gui'
 # folder_path = Path('../static') / 'custom' / 'assets'
 retexture.retexture(folder_path,colors)
