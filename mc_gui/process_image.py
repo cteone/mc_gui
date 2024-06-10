@@ -34,10 +34,11 @@ def change_colors_tolerance(image_path, output_path, colors, tolerance):
             for color in colors:
                 (original_color, new_color) = color
                 (r, g, b, a) = pixel
-                if (r - tolerance) <= original_color[0] and original_color[0] <= (r + tolerance) and (g - tolerance) <= original_color[1] and original_color[1] <= (g + tolerance) and (b - tolerance) <= original_color[2] and original_color[2] <= (b + tolerance):
-                    new_data.append((*new_color, pixel[3]))
-                    color_changed = True
-                    break
+                if r == original_color[0] or g == original_color[1] or b == original_color[2]:
+                    if (r - tolerance) <= original_color[0] and original_color[0] <= (r + tolerance) and (g - tolerance) <= original_color[1] and original_color[1] <= (g + tolerance) and (b - tolerance) <= original_color[2] and original_color[2] <= (b + tolerance):
+                        new_data.append((*new_color, pixel[3]))
+                        color_changed = True
+                        break
             if not color_changed:
                 new_data.append(pixel)
 

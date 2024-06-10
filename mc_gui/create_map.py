@@ -9,6 +9,14 @@ def create_map(original, new):
     return color_pairs
 
 
+def create_map_override(override):
+    with open(override) as override_json:
+        override_parsed = json.load(override_json)
+    color_pairs = [(hex_to_rgb(key), hex_to_rgb(override_parsed[key]))
+                   for key in override_parsed]
+    return color_pairs
+
+
 def create_map_from_json(original, new):
     color_pairs = []
     with open(original) as original_json:
